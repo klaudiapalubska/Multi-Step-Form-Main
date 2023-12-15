@@ -1,0 +1,21 @@
+.label {
+  &__input {
+    border: 1px solid $color-neutral-gray;
+    border-radius: 0.2rem;
+    width: 100%;
+    max-width: 18.75rem;
+    height: 2.2rem;
+    padding-left: 1rem;
+    @include input-text();
+    &:focus {
+      outline: none;
+      border-color: $color-primary-purplish;
+      background-color: $color-primary-pastel;
+      color: $color-primary-marine;
+    }
+  }
+}
+
+.wrong-data {
+  border-color: $color-primary-red;
+}

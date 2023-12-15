@@ -1,0 +1,21 @@
+.button {
+  width: 5rem;
+  height: 2rem;
+  border: none;
+  border-radius: 0.2rem;
+  outline: none;
+  background-color: $color-primary-marine;
+  color: $color-neutral-white;
+  font-size: 0.75rem;
+  transition: box-shadow 0.3s ease;
+  box-shadow: 0 0 10px $color-neutral-gray;
+  &:hover {
+    cursor: pointer;
+    background-color: $color-primary-pastel;
+  }
+
+  &:focus {
+    background-color: $color-primary-purplish;
+    box-shadow: none;
+  }
+}

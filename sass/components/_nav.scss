@@ -1,0 +1,22 @@
+.nav {
+  &__li {
+    list-style: none;
+  }
+  &__number {
+    border: 1px solid $color-neutral-magnolia;
+    color: $color-neutral-magnolia;
+    border-radius: 5rem;
+    width: 2rem;
+    height: 2rem;
+    @include flexbox-center;
+  }
+  &__text {
+    display: none;
+  }
+}
+
+.active-number {
+  background-color: $color-primary-light;
+  color: $color-primary-marine;
+  border-color: $color-primary-light;
+}

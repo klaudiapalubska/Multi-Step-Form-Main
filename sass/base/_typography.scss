@@ -1,0 +1,29 @@
+body {
+  font-family: $primary-font-ubuntu;
+}
+
+.heading {
+  color: $color-primary-marine;
+  font-size: 1.3rem;
+}
+
+.paragraph {
+  color: $color-neutral-gray;
+  font-size: 0.8rem;
+  &--2 {
+    color: $color-primary-marine;
+    font-size: 0.7rem;
+    font-weight: $font-weight-medium;
+    letter-spacing: -0.075rem;
+  }
+
+  &--5 {
+    font-weight: $font-weight-medium;
+  }
+}
+
+@mixin input-text {
+  color: $color-neutral-gray;
+  font-weight: $font-weight-bold;
+  font-size: 0.75rem;
+}
