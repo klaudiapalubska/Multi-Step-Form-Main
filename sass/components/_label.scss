@@ -7,6 +7,10 @@
     height: 2.2rem;
     padding-left: 1rem;
     @include input-text();
+    cursor: pointer;
+    @include responsive($first-breakpoint) {
+      max-width: 25rem;
+    }
     &:focus {
       outline: none;
       border-color: $color-primary-purplish;

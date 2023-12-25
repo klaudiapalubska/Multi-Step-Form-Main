@@ -9,9 +9,18 @@
     width: 2rem;
     height: 2rem;
     @include flexbox-center;
+    @include responsive($first-breakpoint) {
+      margin-right: 1rem;
+      // width: 5rem;
+      //  height: 5rem;
+    }
   }
   &__text {
     display: none;
+    @include responsive($first-breakpoint) {
+      display: block;
+      width: 60%;
+    }
   }
 }
 

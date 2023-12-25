@@ -10,3 +10,11 @@
   justify-content: center;
   align-items: center;
 }
+
+//-------------------------Responsive-----------------------------//
+
+@mixin responsive($breakpoints) {
+  @media only screen and (min-width: $breakpoints) {
+    @content;
+  }
+}

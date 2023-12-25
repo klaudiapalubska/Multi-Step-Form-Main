@@ -11,4 +11,14 @@
 }
 html {
   box-sizing: border-box;
+  //zrobic dla wiekszych formatow
+  //@include responsive($first-breakpoint) {
+  // font-size: 1.1rem;
+  //}
+}
+
+body {
+  @include responsive($first-breakpoint) {
+    background-color: $color-primary-light;
+  }
 }
