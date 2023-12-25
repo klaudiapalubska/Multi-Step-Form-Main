@@ -18,8 +18,27 @@ body {
     letter-spacing: -0.075rem;
   }
 
+  &--3 {
+    color: $color-neutral-gray;
+    font-size: 0.6rem;
+    white-space: nowrap;
+    text-transform: uppercase;
+  }
+
+  &--4 {
+    color: $color-neutral-alabaster;
+    font-size: 0.8rem;
+    white-space: nowrap;
+    text-transform: uppercase;
+    font-weight: $font-weight-bold;
+  }
+
   &--5 {
     font-weight: $font-weight-medium;
+  }
+
+  &--red {
+    color: $color-primary-red;
   }
 }
 

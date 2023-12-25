@@ -45,6 +45,7 @@
       justify-content: center;
       @include responsive($first-breakpoint) {
         flex-direction: column;
+        width: 100%;
       }
     }
 
@@ -53,7 +54,10 @@
       margin: 0 2%;
       display: inline-block;
       @include responsive($first-breakpoint) {
-        // display: flex; //przyczyna bug
+        display: grid; //flexbox disorted circles
+        grid-template-columns: repeat(4, 1fr);
+        grid-row-gap: 0.8rem;
+        grid-column-gap: 0;
       }
     }
   }

@@ -18,6 +18,19 @@
       color: $color-primary-marine;
     }
   }
+  &__text {
+    display: flex;
+    width: 100%;
+    max-width: 18.75rem;
+    @include responsive($first-breakpoint) {
+      max-width: 25rem;
+    }
+  }
+
+  &__paragraph--not-required {
+    margin-left: auto;
+    display: none;
+  }
 }
 
 .wrong-data {

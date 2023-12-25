@@ -11,10 +11,9 @@
 }
 html {
   box-sizing: border-box;
-  //zrobic dla wiekszych formatow
-  //@include responsive($first-breakpoint) {
-  // font-size: 1.1rem;
-  //}
+  @include responsive($second-breakpoint) {
+    font-size: 1.5rem;
+  }
 }
 
 body {

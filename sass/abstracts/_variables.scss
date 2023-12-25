@@ -2,6 +2,7 @@
 
 //Blue colors (primary):
 $color-primary-marine: hsl(213, 96%, 18%);
+$color-primary-marine-light: hsl(213, 67%, 23%);
 $color-primary-purplish: hsl(243, 100%, 62%);
 $color-primary-pastel: hsl(228, 100%, 84%);
 $color-primary-light: hsl(206, 94%, 87%);
@@ -26,3 +27,4 @@ $font-weight-bold: 700;
 //-------------------------Breakpoints-----------------------------//
 
 $first-breakpoint: 45.625em; //730px
+$second-breakpoint: 90em; //1440px

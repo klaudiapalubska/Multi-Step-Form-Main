@@ -14,5 +14,8 @@
 
   &-small-bottom {
     margin-bottom: 0.1rem;
+    @include responsive($first-breakpoint) {
+      margin-bottom: 0.4rem;
+    }
   }
 }
