@@ -20,7 +20,7 @@
         <div class="form-card__nav">
           <ul class="nav">
             <li class="nav__li">
-              <div class="nav__number active-number">
+              <div class="nav__number">
                 <p class="paragraph--5">1</p>
               </div>
               <div class="nav__text">
@@ -30,7 +30,9 @@
             </li>
 
             <li class="nav__li">
-              <div class="nav__number"><p class="paragraph--5">2</p></div>
+              <div class="nav__number active-number">
+                <p class="paragraph--5">2</p>
+              </div>
               <div class="nav__text">
                 <p class="paragraph--3">Step 2</p>
                 <p class="paragraph--4">Select plan</p>
@@ -56,84 +58,73 @@
         </div>
 
         <div class="form-card__form">
-          <!--Fist Section html code-->
           <div class="data-side">
-            <h1 class="heading">Personal info</h1>
+            <h1 class="heading">Select your plan</h1>
             <p class="data-side__paragraph paragraph margin-small-top">
-              Please provide your name, email address, and phone number.
+              You have the option of monthly or yearly billing.
             </p>
-
-            <form action="#" class="form">
-              <label for="#" class="label">
-                <div class="label__text">
-                  <p
-                    class="paragraph--2 label__paragraph margin-top margin-small-bottom"
-                  >
-                    Name
-                  </p>
-                  <p
-                    class="paragraph--2 paragraph--red label__paragraph--not-required margin-top margin-small-bottom"
-                  >
-                    This field is required
-                  </p>
+            <form action="#" class="form-stage-2">
+              <div class="choice-section">
+                <div class="choice-section__target">
+                  <div class="choice-section__target__img">
+                    <img
+                      class="choice-section__target__img-prop"
+                      src="assets/images/icon-arcade.svg"
+                      alt="Arcade"
+                    />
+                    <!--Może pojawić się błąd przy dodaniu tej sekcji do templatki ścieżka do zmian-->
+                  </div>
+                  <div class="choice-section__target__type">Arcade</div>
+                  <div class="choice-section__target__price paragraph">
+                    $9/mo
+                  </div>
+                  <div class="choice-section__target__special-offer"></div>
                 </div>
-                <input
-                  name="name"
-                  type="text"
-                  class="label__input"
-                  placeholder="e.g. Stephen King"
-                  required
-                />
-              </label>
-
-              <label for="#" class="label">
-                <div class="label__text">
-                  <p
-                    class="paragraph--2 label__paragraph margin-top margin-small-bottom"
-                  >
-                    Email Address
-                  </p>
-                  <p
-                    class="paragraph--2 paragraph--red label__paragraph--not-required margin-top margin-small-bottom"
-                  >
-                    This field is required
-                  </p>
+                <div class="choice-section__target">
+                  <div class="choice-section__target__img">
+                    <img
+                      class="choice-section__target__img-prop"
+                      src="assets/images/icon-advanced.svg"
+                      alt="Advanced"
+                    />
+                    <!--Może pojawić się błąd przy dodaniu tej sekcji do templatki ścieżka do zmian-->
+                  </div>
+                  <div class="choice-section__target__type">Advanced</div>
+                  <div class="choice-section__target__price paragraph">
+                    $12/mo
+                  </div>
+                  <div class="choice-section__target__special-offer"></div>
                 </div>
-
-                <input
-                  name="name"
-                  type="email"
-                  class="label__input"
-                  placeholder="e.g. stephenking@lorem.com"
-                  required
-                />
-              </label>
-
-              <label for="#" class="label">
-                <div class="label__text">
-                  <p
-                    class="paragraph--2 label__paragraph margin-top margin-small-bottom"
-                  >
-                    Phone Number
-                  </p>
-                  <p
-                    class="paragraph--2 paragraph--red label__paragraph--not-required margin-top margin-small-bottom"
-                  >
-                    This field is required
-                  </p>
+                <div class="choice-section__target">
+                  <div class="choice-section__target__img">
+                    <img
+                      class="choice-section__target__img-prop"
+                      src="assets/images/icon-pro.svg"
+                      alt="Pro"
+                    />
+                    <!--Może pojawić się błąd przy dodaniu tej sekcji do templatki ścieżka do zmian-->
+                  </div>
+                  <div class="choice-section__target__type">Pro</div>
+                  <div class="choice-section__target__price paragraph">
+                    $15/mo
+                  </div>
+                  <div class="choice-section__target__special-offer"></div>
                 </div>
-                <input
-                  name="name"
-                  type="number"
-                  class="label__input"
-                  placeholder="e.g. +1 234 567 890"
-                  required
-                />
-              </label>
+              </div>
+              <div class="slider-box">
+                <p class="paragraph--2">Monthly</p>
+              </div>
+              <input
+                class="slider slider-box__slid"
+                type="range"
+                name="slider-time"
+                min="0"
+                max="1"
+                value="0"
+                step="1"
+              />
+              <p class="paragraph--2">Yearly</p>
             </form>
-            <div class="data-side__button">
-              <button class="button data-side__button">Next Step</button>
-            </div>
           </div>
         </div>
       </div>
@@ -143,23 +134,14 @@
     </main>
 
     <!--
-     Sidebar start 
-
-
-     Sidebar end 
-
-     Step 1 start 
-
-    
-       
-     Next Step
+   
 
      Step 1 end 
 
      Step 2 start 
 
-    Select your plan You have the option of monthly or yearly billing. Arcade
-    $9/mo Advanced $12/mo Pro $15/mo Monthly Yearly Go Back Next Step
+      Arcade
+    $9/mo Advanced $12/mo Pro $15/mo Go Back Next Step
 
      Step 2 end 
 

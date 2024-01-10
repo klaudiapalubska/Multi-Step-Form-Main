@@ -12,7 +12,7 @@
 html {
   box-sizing: border-box;
   @include responsive($second-breakpoint) {
-    font-size: 1.5rem;
+    font-size: 1.3rem;
   }
 }
 
