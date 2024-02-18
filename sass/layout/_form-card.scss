@@ -67,7 +67,7 @@
     width: 88%;
     background-color: $color-neutral-alabaster;
     border-radius: 0.5rem;
-    @include absolute-position(15.62rem);
+    @include absolute-position(17.62rem);
     $box-shadow: 11px 11px 35px -15px $color-neutral-gray;
     padding: 2rem 1.2rem;
     @include responsive($first-breakpoint) {
@@ -90,12 +90,14 @@
       width: 100%;
     }
   }
-  &__button {
+  &__end {
     display: none;
     @include responsive($first-breakpoint) {
-      display: block;
-      float: right;
-      margin-top: 3.4rem;
+      display: grid;
+      grid-template-columns: auto auto;
+      grid-template-rows: 1fr;
+      gap: 13rem;
+      margin-top: 25%; //najwyzej zmienie??
     }
   }
 }

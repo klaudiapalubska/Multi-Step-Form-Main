@@ -7,8 +7,14 @@
   background-color: $color-primary-marine;
   color: $color-neutral-white;
   font-size: 0.75rem;
+  text-align: center;
   transition: box-shadow 0.3s ease;
   box-shadow: 0 0 10px $color-neutral-gray;
+  @include responsive($first-breakpoint) {
+    max-width: 6rem;
+    max-height: 2rem;
+  }
+
   &:hover {
     cursor: pointer;
     background-color: $color-primary-marine-light;
@@ -17,5 +23,18 @@
   &:focus {
     background-color: $color-primary-purplish;
     box-shadow: none;
+  }
+  &--2 {
+    margin-right: auto;
+    border: none;
+    background-color: $color-neutral-alabaster;
+    font-weight: $font-weight-bold;
+    color: $color-neutral-gray;
+    width: 5rem;
+    height: 2rem;
+    @include responsive($first-breakpoint) {
+      width: 6rem;
+      height: 2rem;
+    }
   }
 }

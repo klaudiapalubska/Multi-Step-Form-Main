@@ -11,6 +11,12 @@
       margin-top: 0.7rem;
     }
   }
+  &-bottom {
+    margin-bottom: 1rem;
+    @include responsive($first-breakpoint) {
+      margin-bottom: 1.5rem;
+    }
+  }
 
   &-small-bottom {
     margin-bottom: 0.1rem;

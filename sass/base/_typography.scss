@@ -6,6 +6,11 @@ body {
 .heading {
   color: $color-primary-marine;
   font-size: 1.3rem;
+  &--2 {
+    font-size: 1rem;
+    font-weight: $font-weight-bold;
+    color: $color-primary-marine;
+  }
 }
 
 .paragraph {
@@ -46,4 +51,12 @@ body {
   color: $color-neutral-gray;
   font-weight: $font-weight-bold;
   font-size: 0.75rem;
+}
+
+.custom-paragraph {
+  font-size: 0.95rem;
+}
+
+.active-color {
+  color: $color-neutral-gray;
 }

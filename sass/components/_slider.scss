@@ -1,0 +1,38 @@
+.slider-box {
+  width: 100%;
+  max-width: 19.43rem;
+  //jak jest wiekrzy rozmiar potem margin: auto;
+  background-color: $color-neutral-magnolia;
+  border-radius: 0.43em;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: none;
+  gap: 0.625;
+  place-items: center;
+  height: 2.9rem;
+  @include responsive($first-breakpoint) {
+    width: 100%;
+    max-width: 24.875rem;
+  }
+}
+
+input[type="range"] {
+  -webkit-appearance: none;
+  appearance: none;
+  width: 2.8rem;
+  height: 1.5rem;
+  padding: 0.2rem;
+  background: $color-primary-marine;
+  border-radius: 5rem;
+  outline: none;
+}
+
+input[type="range"]::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  appearance: none;
+  width: 1rem;
+  height: 1rem;
+  border-radius: 50%;
+  background: $color-neutral-white;
+  cursor: pointer;
+}
