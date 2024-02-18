@@ -32,6 +32,9 @@
     color: $color-neutral-gray;
     width: 5rem;
     height: 2rem;
+    &:hover {
+      cursor: pointer;
+    }
     @include responsive($first-breakpoint) {
       width: 6rem;
       height: 2rem;

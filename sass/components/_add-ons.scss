@@ -1,0 +1,60 @@
+.add-ons-section {
+  @include responsive($first-breakpoint) {
+    padding-top: 0.5rem;
+  }
+  &__target {
+    display: flex;
+    width: 100%;
+    max-width: 18.75rem;
+    margin: 1.5rem auto;
+    padding: 0.5rem;
+    border: 1.5px solid $color-neutral-gray;
+    border-radius: 7px;
+
+    @include responsive($first-breakpoint) {
+      max-width: 25rem;
+      padding: 1rem;
+    }
+  }
+
+  &__input {
+    appearance: none;
+    width: 1.3rem;
+    height: 1.3rem;
+    border: 0.5px solid $color-neutral-gray;
+    border-radius: 5px;
+    outline: none;
+    cursor: pointer;
+    position: relative;
+    margin-right: 5%;
+    margin-top: auto;
+    margin-bottom: auto;
+
+    &:checked {
+      background-color: $color-primary-purplish;
+      border-color: $color-primary-purplish;
+
+      &::before {
+        content: "";
+        width: 0.9rem;
+        height: 0.9rem;
+        background-image: url("/assets/images/icon-checkmark.svg");
+        background-size: cover;
+        position: absolute;
+        background-size: contain;
+        background-position: center;
+        background-repeat: no-repeat;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+      }
+    }
+  }
+
+  &__price {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: auto;
+  }
+}
