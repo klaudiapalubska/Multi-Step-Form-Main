@@ -11,8 +11,8 @@
   transition: box-shadow 0.3s ease;
   box-shadow: 0 0 10px $color-neutral-gray;
   @include responsive($first-breakpoint) {
-    max-width: 6rem;
-    max-height: 2rem;
+    width: 6rem;
+    height: 2.5rem;
   }
 
   &:hover {
@@ -34,10 +34,28 @@
     height: 2rem;
     &:hover {
       cursor: pointer;
+      color: $color-primary-purplish;
     }
+
     @include responsive($first-breakpoint) {
       width: 6rem;
       height: 2rem;
     }
   }
+}
+
+.button-confirm {
+  background-color: $color-primary-purplish;
+  &:hover {
+    cursor: pointer;
+    background-color: $color-primary-marine;
+  }
+}
+
+.button--invisible {
+  display: none;
+}
+
+.button--white-gray {
+  background-color: $color-neutral-white;
 }

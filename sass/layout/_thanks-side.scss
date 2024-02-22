@@ -1,0 +1,17 @@
+.thanks-side {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 1rem;
+
+  &__img {
+    margin-bottom: 1rem;
+  }
+  &__header {
+    margin-bottom: 1rem;
+  }
+  &__text {
+    text-align: center;
+  }
+}
