@@ -4,6 +4,7 @@ class Validation {
     this.email = "";
     this.number = "";
     this.plan = "";
+    this.planTime = "";
   }
 
   validateInput(
@@ -89,13 +90,30 @@ choiceSection.addEventListener("click", function (e) {
 
 // --Slider--
 const slider = document.querySelector(".slider");
+const previousSliderElement = slider.previousElementSibling;
+const nextSliderElement = slider.nextElementSibling;
+const prices = document.querySelectorAll(".info__price");
+const specialOfferElements = document.querySelectorAll(".info__special-offer");
+data.planTime = "Monthly"; // Protect from not being changed by the user
 
 slider.addEventListener("input", function (e) {
-  const sliderValue = +slider.value;
-});
+  const isYearly = +slider.value === 1;
 
-//proba pobrani elemtnu jebanego rodzica xdddd
-//zmiana klasy nonactivekolor
-//dodanie napisu tego samego ale z year i zmiana w js klasy na niewidoczna dla jednego elemtnu
-//wybranie year = pojawia sie klasa z informacja o specjalnej ofercie
-//przypisanie wartosci do obiektu
+  previousSliderElement.classList.toggle("non-active-color");
+  nextSliderElement.classList.toggle("non-active-color");
+
+  specialOfferElements.forEach((element) => {
+    element.style.display = isYearly ? "inline" : "none";
+  });
+
+  if (isYearly) {
+    prices.forEach((element) => {
+      element.classList.toggle("info__non-actual-price");
+    });
+  } else {
+    prices.forEach((element) => {
+      element.classList.toggle("info__non-actual-price");
+    });
+  }
+  data.planTime = isYearly ? "Yearly" : "Monthly";
+});
