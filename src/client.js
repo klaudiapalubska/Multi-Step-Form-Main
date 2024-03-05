@@ -3,6 +3,7 @@ class Validation {
     this.name = "";
     this.email = "";
     this.number = "";
+    this.plan = "";
   }
 
   validateInput(
@@ -44,6 +45,7 @@ class Validation {
   }
 }
 
+//Form handling step 1
 const notRequireClass = "label__paragraph--not-required";
 const wrongDataClass = "wrong-data";
 
@@ -63,3 +65,37 @@ inputs.forEach((input, index) => {
     );
   });
 });
+
+//Form handling step 2
+// --Choice Section--
+const choiceSection = document.querySelector(".choice-section");
+const choiceSectionTargets = document.querySelectorAll(
+  ".choice-section__target"
+);
+
+choiceSection.addEventListener("click", function (e) {
+  const target = e.target.closest(".choice-section__target");
+
+  if (target) {
+    choiceSectionTargets.forEach((otherTarget) => {
+      otherTarget.classList.remove("choice-selected");
+    });
+
+    target.classList.add("choice-selected");
+
+    data.plan = target.dataset.name;
+  }
+});
+
+// --Slider--
+const slider = document.querySelector(".slider");
+
+slider.addEventListener("input", function (e) {
+  const sliderValue = +slider.value;
+});
+
+//proba pobrani elemtnu jebanego rodzica xdddd
+//zmiana klasy nonactivekolor
+//dodanie napisu tego samego ale z year i zmiana w js klasy na niewidoczna dla jednego elemtnu
+//wybranie year = pojawia sie klasa z informacja o specjalnej ofercie
+//przypisanie wartosci do obiektu
