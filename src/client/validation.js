@@ -1,10 +1,10 @@
 class Validation {
   constructor() {
-    this.name = "";
-    this.email = "";
-    this.number = "";
-    this.plan = "";
-    this.planTime = "";
+    this.name = '';
+    this.email = '';
+    this.number = '';
+    this.plan = '';
+    this.planTime = '';
     this.addOns = [undefined, undefined, undefined];
   }
 
@@ -23,7 +23,7 @@ class Validation {
   }
 
   nameValidation(name) {
-    name = name.replace(/\s/g, "");
+    name = name.replace(/\s/g, '');
     return name.length >= 5;
   }
 
@@ -34,15 +34,15 @@ class Validation {
   }
 
   numberValidation(number) {
-    number = number.toString().replace(/[-+]/g, "");
+    number = number.toString().replace(/[-+]/g, '');
     return (
-      (number.length <= 11 && number.substring(0, 2) === "48") ||
-      number.substring(0, 1) === "1"
+      (number.length <= 11 && number.substring(0, 2) === '48') ||
+      number.substring(0, 1) === '1'
     );
   }
 
   wrongData(isValid, inputElement, notRequireClass, notRequireElement) {
-    inputElement.classList.toggle("wrong-data", !isValid);
+    inputElement.classList.toggle('wrong-data', !isValid);
     notRequireElement.classList.toggle(notRequireClass, isValid);
   }
 }
