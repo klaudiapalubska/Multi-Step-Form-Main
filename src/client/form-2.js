@@ -25,6 +25,7 @@ const previousSliderElement = slider.previousElementSibling;
 const nextSliderElement = slider.nextElementSibling;
 const prices = document.querySelectorAll('.info__price');
 const specialOfferElements = document.querySelectorAll('.info__special-offer');
+data.planTime = 'Monthly'; // Protect from not being changed by the user
 
 slider.addEventListener('input', function (e) {
   const isYearly = +slider.value === 1;

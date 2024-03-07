@@ -3,11 +3,12 @@ class Validation {
     this.name = '';
     this.email = '';
     this.number = '';
-    this.plan = '';
-    this.planTime = '';
-    this.addOns = [undefined, undefined, undefined];
+    this.plan = 'Pro';
+    this.planTime = 'Yearly';
+    this.addOns = ['Online service', 'Larger storage', 'Customizable profile'];
   }
 
+  //tests data above
   validateInput(
     value,
     validationFunction,
