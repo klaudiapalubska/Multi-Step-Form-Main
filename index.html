@@ -1,119 +1,73 @@
-<!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <script defer src="src/client/validation.js"></script>
-    <script defer src="src/client/global-data.js"></script>
-    <script defer src="src/client.js"></script>
-    <!-- displays site properly based on user's device -->
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <script defer src="src/client/validation.js"></script>
+  <script defer src="src/client/global-data.js"></script>
+  <script defer src="src/client.js"></script>
+  <!-- displays site properly based on user's device -->
 
-    <link
-      rel="icon"
-      type="image/png"
-      sizes="32x32"
-      href="./assets/images/favicon-32x32.png"
-    />
-    <link rel="stylesheet" href="css/style.css" />
-    <title>Frontend Mentor | Multi-step form</title>
-  </head>
-  <body>
-    <main class="main">
-      <div class="form-card">
-        <div class="form-card__nav">
-          <ul class="nav">
-            <li class="nav__li">
-              <div class="nav__number">
-                <p class="paragraph--5">1</p>
-              </div>
-              <div class="nav__text">
-                <p class="paragraph--3">Step 1</p>
-                <p class="paragraph--4">Your info</p>
-              </div>
-            </li>
-
-            <li class="nav__li">
-              <div class="nav__number">
-                <p class="paragraph--5">2</p>
-              </div>
-              <div class="nav__text">
-                <p class="paragraph--3">Step 2</p>
-                <p class="paragraph--4">Select plan</p>
-              </div>
-            </li>
-
-            <li class="nav__li">
-              <div class="nav__number">
-                <p class="paragraph--5">3</p>
-              </div>
-              <div class="nav__text">
-                <p class="paragraph--3">Step 3</p>
-                <p class="paragraph--4">Add-ons</p>
-              </div>
-            </li>
-
-            <li class="nav__li">
-              <div class="nav__number active-number">
-                <p class="paragraph--5">4</p>
-              </div>
-              <div class="nav__text">
-                <p class="paragraph--3">Step 4</p>
-                <p class="paragraph--4">Summary</p>
-              </div>
-            </li>
-          </ul>
-        </div>
-
-        <div class="form-card__form">
-          <div class="data-side">
-            <h1 class="heading">Finishing up</h1>
-            <p class="data-side__paragraph paragraph--head margin-small-top">
-              Double-check everything looks OK before confirming.
-            </p>
-            <div class="summary">
-              <div class="summary__arcade">
-                <div class="summary__arcade__texts">
-                  <h2
-                    class="summary__arcade__plan heading--2 margin-ultra-small"
-                  >
-                    Arcade
-                    <span class="summary__arcade__time heading--2"
-                      >(Monthly)</span
-                    >
-                  </h2>
-                  <a href="#" class="summary__arcade__link"
-                    ><p class="paragraph">Change</p></a
-                  >
-                </div>
-                <div class="summary__price">
-                  <h2 class="heading--2 summary__price__heading"></h2>
-                </div>
-              </div>
-              <div class="summary__line"></div>
+  <link
+    rel="icon"
+    type="image/png"
+    sizes="32x32"
+    href="./assets/images/favicon-32x32.png"
+  />
+  <link rel="stylesheet" href="css/style.css" />
+  <title>Frontend Mentor | Multi-step form</title>
+</head>
+<body>
+  <main class="main">
+    <div class="form-card">
+      <div class="form-card__nav">
+        <ul class="nav">
+          <li class="nav__li">
+            <div class="nav__number">
+              <p class="paragraph--5">1</p>
             </div>
-            <div class="summary__info summary__info--transparent">
-              <p class="paragraph">
-                Total <span class="paragraph">(per month)</span>
-              </p>
-              <p class="heading--2 purple summary__info__paragraph"></p>
+            <div class="nav__text">
+              <p class="paragraph--3">Step 1</p>
+              <p class="paragraph--4">Your info</p>
             </div>
-            <div class="data-side__end">
-              <button class="button--2 go-back__button">Go Back</button>
-
-              <button class="button button-confirm data-side__button">
-                Confirm
-              </button>
+          </li>
+          <li class="nav__li">
+            <div class="nav__number">
+              <p class="paragraph--5">2</p>
             </div>
-          </div>
-        </div>
+            <div class="nav__text">
+              <p class="paragraph--3">Step 2</p>
+              <p class="paragraph--4">Select plan</p>
+            </div>
+          </li>
+          <li class="nav__li">
+            <div class="nav__number">
+              <p class="paragraph--5">3</p>
+            </div>
+            <div class="nav__text">
+              <p class="paragraph--3">Step 3</p>
+              <p class="paragraph--4">Add-ons</p>
+            </div>
+          </li>
+          <li class="nav__li">
+            <div class="nav__number active-number">
+              <p class="paragraph--5">4</p>
+            </div>
+            <div class="nav__text">
+              <p class="paragraph--3">Step 4</p>
+              <p class="paragraph--4">Summary</p>
+            </div>
+          </li>
+        </ul>
       </div>
-
-      <div class="end">
-        <button class="button--2 go-back__button button--white-gray">
-          Go Back
-        </button>
-        <button class="button button-confirm data-side__button">Confirm</button>
+      <div class="form-card__form">
+        <div class="data-side"></div>
       </div>
-    </main>
-  </body>
+    </div>
+    <div class="end">
+      <button class="button--2 go-back__button button--white-gray">
+        Go Back
+      </button>
+      <button class="button end__button">Next Step</button>
+    </div>
+  </main>
+</body>
 </html>
