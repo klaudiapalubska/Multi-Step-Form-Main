@@ -3,7 +3,8 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <script defer src="src/client/validation.js"></script>
   <script defer src="src/client/global-data.js"></script>
-  <script defer src="src/client.js"></script>
+  <script defer src="{%SCRIPT%}"></script>
+
   <!-- displays site properly based on user's device -->
 
   <link
@@ -21,7 +22,7 @@
       <div class="form-card__nav">
         <ul class="nav">
           <li class="nav__li">
-            <div class="nav__number">
+            <div class="nav__number {%NUMBER1%}">
               <p class="paragraph--5">1</p>
             </div>
             <div class="nav__text">
@@ -30,7 +31,7 @@
             </div>
           </li>
           <li class="nav__li">
-            <div class="nav__number">
+            <div class="nav__number {%NUMBER2%}">
               <p class="paragraph--5">2</p>
             </div>
             <div class="nav__text">
@@ -39,7 +40,7 @@
             </div>
           </li>
           <li class="nav__li">
-            <div class="nav__number">
+            <div class="nav__number {%NUMBER3%}">
               <p class="paragraph--5">3</p>
             </div>
             <div class="nav__text">
@@ -48,7 +49,7 @@
             </div>
           </li>
           <li class="nav__li">
-            <div class="nav__number active-number">
+            <div class="nav__number {%NUMBER4%}">
               <p class="paragraph--5">4</p>
             </div>
             <div class="nav__text">
@@ -59,15 +60,8 @@
         </ul>
       </div>
       <div class="form-card__form">
-        <div class="data-side"></div>
+        <div class="data-side">{%FORM%}</div>
       </div>
-    </div>
-    <div class="end">
-      <button class="button--2 go-back__button button--white-gray">
-        Go Back
-      </button>
-      <button class="button end__button">Next Step</button>
     </div>
   </main>
 </body>
-</html>

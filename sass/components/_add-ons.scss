@@ -35,10 +35,10 @@
       border-color: $color-primary-purplish;
 
       &::before {
-        content: "";
+        content: '';
         width: 0.9rem;
         height: 0.9rem;
-        background-image: url("/assets/images/icon-checkmark.svg");
+        background-image: url('../assets/images/icon-checkmark.svg');
         background-size: cover;
         position: absolute;
         background-size: contain;

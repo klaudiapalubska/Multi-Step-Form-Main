@@ -1,0 +1,3 @@
+Rzeczy, które należy wykonać:
+ -- sprawdzic dane i ogarnac odbieranie (frontend --> backend)
+-- przyciski change.confirm,next step

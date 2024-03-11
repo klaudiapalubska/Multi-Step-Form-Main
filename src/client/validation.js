@@ -7,6 +7,7 @@ class Validation {
     this.planTime = 'Yearly';
     this.addOns = ['Online service', 'Larger storage', 'Customizable profile'];
   }
+  //'Online service', 'Larger storage', 'Customizable profile'
 
   //tests data above
   validateInput(
